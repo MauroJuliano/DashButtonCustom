@@ -8,7 +8,7 @@ s.summary = "Botao customizado entre borda continua, ou com dash"
 s.requires_arc = true
 
 # 2
-s.version = "1.1"
+s.version = "1.0"
 
 # 3
 s.license = { :type => "MIT", :file => "LICENSE" }
@@ -17,10 +17,10 @@ s.license = { :type => "MIT", :file => "LICENSE" }
 s.author = { "Mauro Figueiredo" => "maurodeveloper@outlook.com" }
 
 # 5 - Replace this URL with your own GitHub page's URL (from the address bar)
-s.homepage = "https://github.com/MauroJuliano/WaveFormLoading"
+s.homepage = "https://github.com/MauroJuliano/DashButtonCustom"
 
 # 6 - Replace this URL with your own Git URL from "Quick Setup"
-s.source = { :git => "https://github.com/MauroJuliano/WaveFormLoading.git",
+s.source = { :git => "https://github.com/MauroJuliano/DashButtonCustom.git",
 :tag => "#{s.version}" }
 
 # 7 COLOQUE AQUI TODAS AS BIBLIOTECAS NATIVAS QUE FOR USAR
