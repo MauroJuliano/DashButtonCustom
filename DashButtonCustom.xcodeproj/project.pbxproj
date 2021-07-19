@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		9D55F36926A64369005AC3DE /* DashButtonCustom.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D55F36726A64369005AC3DE /* DashButtonCustom.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D55F37126A64392005AC3DE /* CustomButtonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D55F37026A64392005AC3DE /* CustomButtonController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9D55F36426A64369005AC3DE /* DashButtonCustom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DashButtonCustom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D55F36726A64369005AC3DE /* DashButtonCustom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DashButtonCustom.h; sourceTree = "<group>"; };
 		9D55F36826A64369005AC3DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D55F37026A64392005AC3DE /* CustomButtonController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButtonController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,9 +49,18 @@
 			isa = PBXGroup;
 			children = (
 				9D55F36726A64369005AC3DE /* DashButtonCustom.h */,
+				9D55F36F26A6436F005AC3DE /* Classes */,
 				9D55F36826A64369005AC3DE /* Info.plist */,
 			);
 			path = DashButtonCustom;
+			sourceTree = "<group>";
+		};
+		9D55F36F26A6436F005AC3DE /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9D55F37026A64392005AC3DE /* CustomButtonController.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -94,6 +105,7 @@
 				TargetAttributes = {
 					9D55F36326A64369005AC3DE = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 					};
 				};
 			};
@@ -130,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D55F37126A64392005AC3DE /* CustomButtonController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +274,7 @@
 		9D55F36D26A64369005AC3DE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -276,6 +290,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.lestad.DashButtonCustom;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +299,7 @@
 		9D55F36E26A64369005AC3DE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
